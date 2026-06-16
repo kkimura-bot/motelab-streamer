@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>送信完了｜MOTE LAB ストリーマー</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy-deep:   #0E1428;
+  --navy-base:   #141D3D;
+  --purple-neon: #A855F7;
+  --purple-glow: #8B5CF6;
+  --gold:        #C8A04D;
+  --gold-bright: #E8B860;
+  --white:       #F5F7FA;
+  --muted:       rgba(245,247,250,0.75);
+  --dim:         rgba(245,247,250,0.42);
+  --r:           12px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--navy-deep);
+  color: var(--white);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  overflow-x: hidden;
+}
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent, transparent 2px,
+    rgba(168,85,247,.018) 2px, rgba(168,85,247,.018) 4px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+a { color: inherit; text-decoration: none; }
+.wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+}
+.check-ring {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  border: 2px solid rgba(168,85,247,.6);
+  background: rgba(168,85,247,.08);
+  box-shadow: 0 0 32px rgba(168,85,247,.3);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 28px;
+}
+.check-ring svg { width: 36px; height: 36px; stroke: var(--purple-neon); }
+.eyebrow {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 11px; font-weight: 600; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--purple-neon);
+  margin-bottom: 16px;
+}
+h1 {
+  font-size: clamp(22px, 4vw, 32px);
+  font-weight: 900;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.85;
+  margin-bottom: 8px;
+}
+.divider {
+  width: 40px; height: 1px;
+  background: rgba(168,85,247,.35);
+  margin: 32px auto;
+}
+.btn-gold {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-bright));
+  color: var(--navy-deep);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 900; font-size: 15px;
+  padding: 16px 32px;
+  border-radius: var(--r);
+  border: none; cursor: pointer;
+  transition: transform .2s, filter .2s, box-shadow .2s;
+  text-decoration: none;
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 8px 32px rgba(200,160,77,.5);
+}
+.btn-line {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  gap: 10px;
+  background: #06C755;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700; font-size: 14px;
+  padding: 14px 28px;
+  border-radius: var(--r);
+  border: none; cursor: pointer;
+  transition: transform .2s, filter .2s;
+  text-decoration: none;
+}
+.btn-line:hover { transform: translateY(-2px); filter: brightness(1.06); }
+.btn-ghost {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--purple-neon);
+  font-weight: 700; font-size: 13px;
+  padding: 12px 24px;
+  border-radius: var(--r);
+  border: 1.5px solid rgba(168,85,247,.45);
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+  text-decoration: none;
+}
+.btn-ghost:hover { background: rgba(168,85,247,.1); transform: translateY(-2px); }
+.cta-stack { display: flex; flex-direction: column; gap: 12px; }
+.ft { margin-top: 48px; font-size: 12px; color: var(--dim); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- チェックアイコン -->
+  <div class="check-ring">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 6 9 17l-5-5"/>
+    </svg>
+  </div>
+
+  <div class="eyebrow">// RECEIVED</div>
+
+  <h1>
+    ありがとう。<br>
+    <span style="color:var(--purple-neon);text-shadow:0 0 24px rgba(168,85,247,.8);">追って連絡する。</span>
+  </h1>
+
+  <p>相談を受け取った。<br>内容を確認して、こちらから連絡を入れる。</p>
+  <p style="font-size:13px;color:var(--dim);">急ぎの場合は、LINEで話しかけてくれ。</p>
+
+  <div class="divider"></div>
+
+  <div class="cta-stack">
+    <a href="https://lin.ee/QVKHSTm" class="btn-line">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.94 2 10.75c0 3.23 1.86 6.07 4.7 7.78-.13.47-.82 2.94-.88 3.18 0 0-.04.15.08.21.12.06.25 0 .25 0 .34-.05 3.87-2.54 4.54-3.01.43.06.87.09 1.31.09 5.52 0 10-3.94 10-8.75S17.52 2 12 2z"/></svg>
+      LINEで話す
+    </a>
+    <a href="https://test.mote-lab.group" class="btn-gold">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 12"/></svg>
+      そのまま無料診断を受ける
+    </a>
+    <a href="/" class="btn-ghost">
+      トップへ戻る
+    </a>
+  </div>
+
+</div>
+
+<div class="ft">&copy; 2026 MOTE LAB. All rights reserved.</div>
+
+</body>
+</html>

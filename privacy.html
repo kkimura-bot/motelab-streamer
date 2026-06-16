@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー｜MOTE LAB</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy-deep:   #0E1428;
+  --navy-base:   #141D3D;
+  --navy-mid:    #1a2550;
+  --purple-neon: #A855F7;
+  --gold:        #C8A04D;
+  --white:       #F5F7FA;
+  --muted:       rgba(245,247,250,0.72);
+  --dim:         rgba(245,247,250,0.42);
+  --line:        rgba(168,85,247,0.18);
+  --r:           12px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--navy-deep);
+  color: var(--white);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  line-height: 1.9;
+  font-size: 14.5px;
+  overflow-x: hidden;
+}
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent, transparent 2px,
+    rgba(168,85,247,.018) 2px, rgba(168,85,247,.018) 4px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+a { color: var(--purple-neon); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(14,20,40,.93);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(168,85,247,.15);
+  padding: 14px 24px;
+}
+.hd-in {
+  max-width: 760px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 18px; font-weight: 700; letter-spacing: .06em;
+  color: var(--white); text-decoration: none;
+}
+.logo em { color: var(--purple-neon); font-style: normal; }
+.back-link {
+  font-size: 12px; color: var(--muted);
+  text-decoration: none; letter-spacing: .04em;
+}
+.back-link:hover { color: var(--purple-neon); }
+
+/* DOC */
+main {
+  position: relative; z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 64px 56px 80px;
+}
+h1 {
+  font-size: 26px; font-weight: 900;
+  color: var(--white);
+  margin-bottom: 8px; letter-spacing: .02em;
+}
+.updated {
+  font-size: 12px; color: var(--dim);
+  margin-bottom: 40px;
+  font-family: 'Rajdhani', sans-serif; letter-spacing: .06em;
+}
+.intro {
+  font-size: 14.5px; color: var(--muted);
+  margin-bottom: 40px; line-height: 1.9;
+}
+h2 {
+  font-size: 15px; font-weight: 900;
+  color: var(--white);
+  margin: 40px 0 14px;
+  padding-left: 14px;
+  border-left: 3px solid var(--purple-neon);
+  letter-spacing: .02em;
+}
+p { color: var(--muted); margin-bottom: 12px; }
+ul, ol { padding-left: 22px; margin-bottom: 12px; }
+li { color: var(--muted); margin-bottom: 6px; }
+.note {
+  font-size: 12.5px; color: var(--dim);
+  background: rgba(168,85,247,.06);
+  border: 1px solid rgba(168,85,247,.2);
+  border-radius: var(--r);
+  padding: 14px 18px;
+  margin-top: 32px;
+  line-height: 1.8;
+}
+
+/* FOOTER */
+footer {
+  position: relative; z-index: 1;
+  max-width: 760px; margin: 0 auto;
+  padding: 24px 24px 48px;
+  font-size: 12px; color: var(--dim);
+  text-align: center;
+  border-top: 1px solid rgba(168,85,247,.1);
+}
+
+@media (max-width: 720px) {
+  main { padding: 44px 24px 60px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hd-in">
+    <a class="logo" href="/"><span>MOTE</span><em>LAB</em></a>
+    <a class="back-link" href="/">← トップへ戻る</a>
+  </div>
+</header>
+
+<main>
+  <h1>プライバシーポリシー</h1>
+  <p class="updated">制定日：2026年6月13日</p>
+
+  <p class="intro">株式会社MoteLab（設立準備中）（以下「当社」といいます）は、当社が提供するサービス「MOTE LAB」（以下「本サービス」といいます）における個人情報の取扱いについて、以下のとおりプライバシーポリシーを定めます。</p>
+
+  <h2>1. 取得する情報</h2>
+  <p>当社は、本サービスの提供にあたり、以下の情報を取得します。</p>
+  <ul>
+    <li>氏名、ハンドルネーム、連絡先（メールアドレス・SNSアカウント等）等の基本情報</li>
+    <li>診断・採点の結果データ（MOTEスコア、自己採点、フィードバックコメント）</li>
+    <li>本サービスの利用履歴、決済に関する情報</li>
+    <li>お問い合わせ・相談フォーム等で提供いただく情報</li>
+  </ul>
+
+  <h2>2. 利用目的</h2>
+  <p>取得した情報は、以下の目的で利用します。</p>
+  <ul>
+    <li>本サービスの提供（診断・採点・フィードバック・プログラムの処方）のため</li>
+    <li>本人確認および安全管理のため</li>
+    <li>料金の請求・決済のため</li>
+    <li>サービスの品質向上のため</li>
+    <li>お問い合わせ・相談への対応、重要なお知らせの送付のため</li>
+    <li>利用規約に違反する行為への対応のため</li>
+  </ul>
+
+  <h2>3. 提出データの取扱い</h2>
+  <p>ご相談・お問い合わせで提供いただいた情報は、担当者および運営担当者のみが、回答・対応の目的に限ってアクセスします。</p>
+  <ul>
+    <li>提供データを対応以外の目的で利用することはありません</li>
+    <li>ご本人の同意なく、提供データを宣伝・広告に使用することはありません</li>
+  </ul>
+
+  <h2>4. 第三者提供</h2>
+  <p>当社は、次の場合を除き、本人の同意なく個人情報を第三者に提供しません。</p>
+  <ul>
+    <li>法令に基づく場合</li>
+    <li>人の生命、身体または財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき</li>
+    <li>国の機関等への協力が必要な場合</li>
+  </ul>
+
+  <h2>5. 委託</h2>
+  <p>当社は、利用目的の達成に必要な範囲内において、個人情報の取扱いの全部または一部を委託する場合があります（決済処理、システム運用等）。この場合、委託先に対して必要かつ適切な監督を行います。</p>
+
+  <h2>6. 安全管理措置</h2>
+  <p>当社は、個人情報の漏えい、滅失またはき損の防止その他個人情報の安全管理のために、アクセス制御・暗号化等の必要かつ適切な措置を講じます。運営担当者には、契約により守秘義務を課しています。</p>
+
+  <h2>7. Cookie・アクセス解析</h2>
+  <p>本サービスのウェブサイトでは、利便性の向上およびアクセス解析のためにCookieを使用する場合があります。Cookieの利用を希望されない場合は、ブラウザの設定により無効化することが可能です。</p>
+
+  <h2>8. 開示・訂正・利用停止等の請求</h2>
+  <p>本人から、個人情報の開示・訂正・追加・削除・利用停止等の請求があった場合、本人確認のうえ、法令に基づき遅滞なく対応します。請求は下記の窓口までご連絡ください。</p>
+
+  <h2>9. 改定</h2>
+  <p>本ポリシーの内容は、法令の改正やサービス内容の変更に応じて、必要に応じて改定されます。重要な変更がある場合は、本サービスのウェブサイト上で告知します。</p>
+
+  <h2>10. お問い合わせ窓口</h2>
+  <p>本ポリシーに関するお問い合わせは、以下の窓口までお願いします。</p>
+  <p>
+    株式会社MoteLab（設立準備中）　個人情報お問い合わせ窓口<br>
+    メールアドレス：<span style="color:var(--dim)">（設立後に記載）</span>
+  </p>
+
+  <div class="note">※ 本ページはサービス公開準備中のドラフトです。会社設立・サービス開始時に、所在地・連絡先等の確定情報を反映します。</div>
+</main>
+
+<footer>
+  &copy; 2026 株式会社MoteLab（設立準備中）. All rights reserved.
+</footer>
+
+</body>
+</html>
